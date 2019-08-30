@@ -746,45 +746,60 @@
             <div class="eight columns">
 
                <!-- form -->
-               <form action="inc/sendEmail.php" method="POST" id="contactForm" name="contactForm">
-					<fieldset>
-
-                  <div>
-						   <label for="contactName">Name <span class="required">*</span></label>
-						   <input type="text" value="" size="35" id="contactName" name="contactName">
-                  </div>
-
-                  <div>
-						   <label for="contactEmail">Email <span class="required">*</span></label>
-						   <input type="text" value="" size="35" id="contactEmail" name="contactEmail">
-                  </div>
-
-                  <div>
-						   <label for="contactSubject">Subject</label>
-						   <input type="text" value="" size="35" id="contactSubject" name="contactSubject">
-                  </div>
-
-                  <div>
-                     <label for="contactMessage">Message <span class="required">*</span></label>
-                     <textarea cols="50" rows="15" id="contactMessage" name="contactMessage"></textarea>
-                  </div>
-
-                  <div>
-                     <button class="submit">Submit</button>
-                     <span id="image-loader">
-                        <img alt="" src="images/loader.gif">
-                     </span>
-                  </div>
-
-					</fieldset>
-				   </form> <!-- Form End -->
-
-               <!-- contact-warning -->
-               <div id="message-warning"> Error boy</div>
-               <!-- contact-success -->
-				   <div id="message-success">
-                  <i class="fa fa-check"></i>Your message was sent, thank you!<br>
-				   </div>
+               <form name="htmlform" method="post" action="inc/sendEmail2.php">
+                  <table width="450px">
+                     </tr>
+                     <tr>
+                        <td valign="top">
+                           <label for="first_name">First Name *</label>
+                        </td>
+                        <td valign="top">
+                           <input type="text" name="first_name" maxlength="50" size="30">
+                        </td>
+                     </tr>
+               
+                     <tr>
+                        <td valign="top"">
+                 <label for=" last_name">Last Name *</label>
+                        </td>
+                        <td valign="top">
+                           <input type="text" name="last_name" maxlength="50" size="30">
+                        </td>
+                     </tr>
+                     <tr>
+                        <td valign="top">
+                           <label for="email">Email Address *</label>
+                        </td>
+                        <td valign="top">
+                           <input type="text" name="email" maxlength="80" size="30">
+                        </td>
+               
+                     </tr>
+                     <tr>
+                        <td valign="top">
+                           <label for="telephone">Telephone Number</label>
+                        </td>
+                        <td valign="top">
+                           <input type="text" name="telephone" maxlength="30" size="30">
+                        </td>
+                     </tr>
+                     <tr>
+                        <td valign="top">
+                           <label for="comments">Comments *</label>
+                        </td>
+                        <td valign="top">
+                           <textarea name="comments" maxlength="1000" cols="25" rows="6"></textarea>
+                        </td>
+               
+                     </tr>
+                     <tr>
+                        <td colspan="2" style="text-align:center">
+                           <input type="submit" value="Submit">
+                        </td>
+                     </tr>
+                  </table>
+               </form>
+               <!-- Form End -->
 
             </div>
 
