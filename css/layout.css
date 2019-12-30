@@ -419,12 +419,14 @@ ul#nav li.current a { color: #F06000; }
    font: 15px/24px 'opensans-semibold', sans-serif;
    text-transform: uppercase;
    letter-spacing: 1px;
-   text-align: center;
+   text-align: left;
    margin-bottom: 48px;
-   color: rgba(116, 116, 116, 0.897));
+   margin-left: 20px;
+   color: rgba(116, 116, 116, 0.719));
 }
 
 /* Portfolio Content */
+
 #portfolio-wrapper .columns { margin-bottom: 36px; }
 .portfolio-item .item-wrap {
    background: #fff;

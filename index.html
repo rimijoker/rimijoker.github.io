@@ -58,8 +58,7 @@
       <div class="row banner">
          <div class="banner-text">
             <h1 class="responsive-headline">I'm Anshuman Singh,</h1>
-            <h3 color ="black"><span>Start scrolling
-            and learn more about me.</h3>
+            <h3 color ="black"><span>Start scrolling to learn more about me.</h3>
             <hr />
             <ul class="social">
                <li><a href="https://www.linkedin.com/in/iamanshumansingh/"><i class="fa fa-linkedin"></i></a></li>
@@ -114,7 +113,7 @@
 
                <div class="columns download">
                   <p>
-                     <a href="https://www.slideshare.net/slideshow/embed_code/key/Lo0TMzjHbHT4g0" class="button"><i class="fa fa-download"></i>View Resume</a>
+                     <a href="https://www.slideshare.net/slideshow/embed_code/key/mBRnonLRDaL0xx" class="button"><i class="fa fa-download"></i>View Resume</a>
                   </p>
                </div>
 
@@ -400,10 +399,27 @@
 
          <div class="twelve columns collapsed">
 
-            <h1>Check Out Some of My Projects.</h1>
+            <h1>Here are some of my personal projects:-</h1>
 
             <!-- portfolio-wrapper -->
-            <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
+            <div id="portfolio-wrapper" class="bgrid-quarters">
+               
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+               
+                     <a href="#modal-03" title="">
+                        <img alt="" src="images/portfolio/gan.png">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+                              <h5>Generating human faces with Adversarial Networks</h5>
+                              <p>Generative Adversarial Networks Model</p>
+                           </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+               
+                  </div>
+               </div>
 
           	   <div class="columns portfolio-item">
                   <div class="item-wrap">
@@ -437,25 +453,9 @@
                      </a>
 
                   </div>
-          		</div> <!-- item end 
+          		</div>  
 
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-03" title="">
-                        <img alt="" src="images/portfolio/judah.jpg">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>Judah</h5>
-                              <p>Webdesign</p>
-          					   </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
-                  </div>
-          		</div> 
-
+               <!-- item end
                <div class="columns portfolio-item">
                   <div class="item-wrap">
 
@@ -557,8 +557,8 @@
 			      <h4>Cats VS Dogs</h4>
 			      <p>
                   <ul>
-                     <li>Implemented a CNN with dropout using tensorflow and Keras to classify images of dogs and cats.</li>
-                     <li>Achieved 80% accuracy on a 25,000 images data-set.</li>
+                     <li>Implemented a CNN with dropout using tensorflow(Keras) to classify images of dogs and cats.</li>
+                     <li>Achieved 95% accuracy on a 25,000 images data-set.</li>
                   </ul>
                </p>
                <span class="categories"><i class="fa fa-tag"></i>CNN, Keras, Tensorflow</span>
@@ -595,16 +595,17 @@
 
          <div id="modal-03" class="popup-modal mfp-hide">
 
-		      <img class="scale-with-grid" src="images/portfolio/modals/m-judah.jpg" alt="" />
+		      <img class="scale-with-grid" src="images/portfolio/gan.png" alt="" />
 
 		      <div class="description-box">
-			      <h4>Judah</h4>
-			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Branding</span>
+			      <h4>Generating human faces with Adversarial Networks</h4>
+			      <p>Implemented a GAN to generate new human faces using the LWF faces dataset in Tensorflow(Keras). <br>Random Noise was fed into a CNN(Generator) which was trained against 13,000 images of human faces with the help of a
+               Discriminator.</p>
+               <span class="categories"><i class="fa fa-tag"></i>GANs, CNN, Keras, Tensorflow</span>
 		      </div>
 
             <div class="link-box">
-               <a href="http://www.behance.net">Details</a>
+               <a href="https://rimijoker.github.io/Generating-human-faces-with-Adversarial-Networks/">Details</a>
 		         <a class="popup-modal-dismiss">Close</a>
             </div>
 
