@@ -1,60 +1,102 @@
-# Site
-repository: sproogen/resume-theme
-favicon: images/favicon.ico
+repository: vinayak19th/vinayak19th.github.io/
+favicon: images/fav.ico``
 
 # Personal info
-name: Brett Harris
-title: Senior Network System Administrator
-email: brett.h@email.co.uk
-website: www.github.com/sproogen/resume-theme
+name: Vinayak Sharma
+title: Third Year, Computer Science & Engineering
+email: vinayak1998th@Gmail.com
+phone: "9994756433"
+website: vinayak19th.github.io
+
+darkmode: false
 
 # Social links
-twitter_username: facespics
-github_username:  sproogen
-# dribbble_username: jekyll
-# facebook_username: jekyll
-# flickr_username: jekyll
-instagram_username: chillwildlife
-linkedin_username: jameswgrant
-# pinterest_username: jekyll
-youtube_username: globalmtb
-# googleplus_username: +jekyll
+#twitter_username: jekyllrb
+github_username:  vinayak19th
+stackoverflow_username: 8700517/vinayak-sharma
+facebook_username: vinayak19th
+instagram_username: stochastic_individual
+linkedin_username: vinayaksha
+
+# Additional icon links
+#additional_links:
+#- title: Link name
+#  icon: Font Awesome brand icon name (eg. fa-twitter) (https://fontawesome.com/icons?d=gallery&s=brands&m=free)
+#  url: Link url (eg. https://google.com)
+# - title: another link
+#   icon: font awesome brand icon name (eg. fa-twitter) (https://fontawesome.com/icons?d=gallery&s=brands&m=free)
+#   url: Link url (eg. https://google.com)
+
+# Google Analytics and Tag Manager
+# Using more than one of these may cause issues with reporting
+# gtm: "GTM-0000000"
+# gtag: "UA-00000000-0"
+# google_analytics: "UA-00000000-0"
 
 # About Section
-# about_title: About Me
-about_profile_image: images/profile.jpg
+# about_title: About Me (Use this to override about section title)
+about_profile_image: images/picture.jpg
 about_content: | # this will include new lines to allow paragraphs
-  Hi, my name's Brett and I'm a senior network system administrator. As well as administrating systems I also have experience making software and web apps. I have worked at a number of companies gaining teamwork and leadership skills.
+  Student Researcher with a passion for the fields of <mark>Deep Learning</mark> & <mark>Quantum Computing</mark>.
+  Currently the <mark>Head of Research, AI & Quantum Computing</mark> at [Next Tech Lab](https://nextech.io/) and Vice-Chairperson of 
+  [ACM Student chapter](https://www.facebook.com/SRMACM/) at SRM IST. <br>
+  I am proficient with :
+  - Python 3.x and its common associated libraries (numpy, pandas, matplotlib, django)
+  - [Tensorflow](https://www.tensorflow.org/), [cirq](https://cirq.readthedocs.io/en/stable/) and their combinational 
+  library [Tensorflow Quantum](https://www.tensorflow.org/quantum). 
+  - I also have some experience with deploying models using [tensorflow.js](https://www.tensorflow.org/js)
 
-  I am most skilled in: <mark>AWS</mark> and <mark>Eating Pizza</mark>
+  I aim to pursue a masters degree in Computer Science with a focus on Quantum Machine Learning. 
 
 # Projects Section
-# projects_title: Projects
+# projects_title: Projects #(Use this to override about projects section title)
 
 # Experience Section
-# experience_title: Experience
+# experience_title: Experience #(Use this to override about experience section title)
 
 # Education Section
-# educaton_title: Education
+# education_title: Education #(Use this to override about education section title)
 
 # More Section
-# more_title: A Little More About Me
+# more_title: A Little More About Me #(Use this to override about more section title)
 more_content: | # this will include new lines to allow paragraphs
-  Alongside my interests in networks and software engineering some of my other interests and hobbies are:
-   - Rock climbing
-   - Gaming
-   - Knitting
-   - [Becoming a ninja](https://www.youtube.com/watch?v=vtg4o__aRMg)
-
+  
 # Footer
 footer_show_references: true
 
 # Build settings
-remote_theme: sproogen/resume-theme
+# theme: modern-resume-theme (Use this is you are hosting your resume yourself)
+remote_theme : sproogen/modern-resume-theme
 
 sass:
   sass_dir: _sass
   style: compressed
+  load_paths:
+        - _sass
+        - node_modules
+
 
 plugins:
- - jekyll-seo-tag
+  - jekyll-seo-tag
+
+color:
+  primary: 18bc9c #80B3FF
+  primary-rgb: "24,288,156" #"128,179,255"
+  secondary: 2c3e50 #FD6E8A
+  secondary-dark: 233140 #A2122F
+
+markdown: kramdown
+permalink: pretty
+
+exclude : [
+  "Gemfile",
+  "Gemfile.lock",
+  "node_modules",
+  "vendor/bundle/",
+  "vendor/cache/",
+  "vendor/gems/",
+  "vendor/ruby/",
+  "lib/",
+  "scripts/",
+  "docker-compose.yml",
+  ]
