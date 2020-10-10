@@ -1,2 +1,1 @@
-# rimijoker.github.io
-Terminal based portfolio website
+# Personal Website
