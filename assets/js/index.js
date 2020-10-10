@@ -95,7 +95,7 @@ function replaceUrls(text) {
   }
 }
 
-Typer.speed = 3;
+Typer.speed = 4;
 Typer.file = "rimijoker.html";
 Typer.init();
 
